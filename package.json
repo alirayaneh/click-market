@@ -1,0 +1,42 @@
+{
+  "name": "click-market-addon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/alirayaneh/click-market.git"
+  },
+  "keywords": [],
+  "author": "Ali Hossinzadeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alirayaneh/click-market/issues"
+  },
+  "homepage": "https://github.com/alirayaneh/click-market#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^5.0.9",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.30.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
+    "fetch-retry": "^4.1.0",
+    "isomorphic-fetch": "^3.0.0",
+    "isotope-layout": "^3.0.6",
+    "jquery-bridget": "^3.0.0",
+    "toastify-js": "^1.9.3",
+    "woocommerce-api": "^1.5.0"
+  }
+}

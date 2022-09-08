@@ -1,0 +1,6 @@
+node_modules/
+vendor/
+package-lock.json
+composer.lock
+cacert.pem
+kilikmarket-addon.zip
